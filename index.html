@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tip-calculator-dom</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div id="content">
+            <div id="bill">Bill
+                <div id="billbox">
+                    <input class="billboxinput" type="number" placeholder="$">
+                </div>
+            </div>
+            <div id="select-tip">
+                Select Tip%
+                <div id="grid">
+                    <div class="percentages" id="five" value="5">5%</div>
+                    <div class="percentages" id="ten" value="10">10%</div>
+                    <div class="percentages" id="fifteen" value="15">15%</div>
+                    <div class="percentages" id="twenty" value="20">20%</div>
+                    <div class="percentages" id="fifty" value="50">50%</div>
+                    <div class="percentages" id="hundred" value="100">100%</div>
+                </div>
+            </div>
+            <div id="no-of-people">
+                No. of People
+                <div id="numberofpeople">
+                    <input class="noofpeople" type="number" placeholder="0">
+                </div>
+            </div>
+        </div>
+        <div id="billing-div">
+            <div id="tipcalculated">Tip
+                <p id="tip-in-dollars">$0.00</p>
+            </div>
+            <div id="total">
+                total
+                <p id="totalcalculated">$0.00</p>
+            </div>
+            <button>Reset</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
